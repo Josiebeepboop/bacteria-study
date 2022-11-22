@@ -26,7 +26,7 @@ function buildMetadata(sample) {
     var PANEL = d3.select("#sample-metadata");
 
     PANEL.html("");
-    PANEL.append("h6").text(result);
+    PANEL.append("h6").text(result.location);
   });
 };
 
