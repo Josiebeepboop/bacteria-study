@@ -12,10 +12,12 @@ function init() {
     });
 })};
 
+init();
+
 function optionChanged(newSample) {
   console.log(newSample)
   buildMetadata(newSample);
-  buildCharts(newSample);
+  // buildCharts(newSample);
 };
 
 function buildMetadata(sample) {
@@ -30,4 +32,9 @@ function buildMetadata(sample) {
   });
 };
 
-init();
+// function buildCharts(sample) {
+
+
+// };
+
+
