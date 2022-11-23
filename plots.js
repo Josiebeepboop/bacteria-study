@@ -107,7 +107,13 @@ function buildMetadata(sample) {
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
-      xaxis: {title: "OTU ID"},
+      xaxis: {
+        title: "OTU ID",
+      automargin: true},
+      yaxis: {
+        title: "Sample Values",
+        automargin: true
+      },
       hovermode: "closest"
     };
     // 3. Use Plotly to plot the data with the layout.
@@ -149,7 +155,7 @@ function buildMetadata(sample) {
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
     width: 500,
-    height: 600, 
+    height: 450, 
     margin: { t: 0, b: 0 } 
     };
     // 6. Use Plotly to plot the gauge data and layout.
